@@ -1,0 +1,88 @@
+import React from "react";
+
+// ----------------------------Typewriter------------------------------------
+import Typewriter from "typewriter-effect";
+// ---------------------- Carousel------------------------------------------
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+// ---------------------------home data---------------------------
+import { HomeDATA } from "./HomeData";
+
+// ------------------------------ home css--------------------------------
+import "./home.css";
+
+const Home = () => {
+  return (
+    <>
+      <div className="home-container" id="home">
+        {HomeDATA.map((HomeDATA, index) => {
+          return (
+            <div className={HomeDATA.home} key={index}>
+              <marquee behavior="" direction="">
+                <p>{HomeDATA.scrollbar}</p>
+              </marquee>
+              <div className={HomeDATA.banner_container}>
+                <Carousel 
+                autoPlay
+                infiniteLoop
+                showArrows={false}
+                interval={4600}
+                showThumbs={false} 
+                 >
+                  <div className={HomeDATA.hero}>
+                    <div className="hero-left">
+               
+                      
+                   <h1><Typewriter
+                      options={{
+                        strings: ["Welcome to",  "eGRADTutor"],
+                        autoStart: true,
+                        loop: true,
+                      }}
+                    /></h1> 
+
+                    <p>
+                      eGRADTutor is an Edtech firm started with a vision to
+                      blend the boundaries in education and take best-in-class
+                      courses and teachers virtually to every corner of the
+                      country. Our courses are developed by the alumni of
+                      IITs/IISc with an intent to enhance the student's
+                      abilities to face some of the toughest exams of the
+                      country. Our offerings not just provide a deeper
+                      understanding of the subjects to the students, but they
+                      also make them exam ready.
+                    </p>
+                    </div>
+                  </div>
+                  <div className={HomeDATA.banner}>
+                    <img src={HomeDATA.b1} alt="" />
+                  </div>
+                  <div className={HomeDATA.banner}>
+                    <img src={HomeDATA.b2} alt="" />
+                  </div>
+                  <div className={HomeDATA.banner}>
+                    <img src={HomeDATA.b3} alt="" />
+                  </div>
+                  <div className={HomeDATA.banner}>
+                    <img src={HomeDATA.b1} alt="" />
+                  </div>
+                  <div className={HomeDATA.banner}>
+                    <img src={HomeDATA.b5} alt="" />
+                  </div>
+                  <div className={HomeDATA.banner}>
+                    <img src={HomeDATA.b6} alt="" />
+                  </div>
+
+                  <div className={HomeDATA.banner}></div>
+                  <div className={HomeDATA.banner}></div>
+                </Carousel>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
+};
+
+export default Home;

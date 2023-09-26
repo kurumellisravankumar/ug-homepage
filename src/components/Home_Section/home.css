@@ -1,0 +1,68 @@
+marquee {
+    background: #535353;
+    color: #ffffff;
+    padding: 0.5rem;
+    margin: 1.3rem auto;
+}
+
+.banner_container {
+    width: 100%;
+    height: 110vh;
+    background: #279eff21;
+    margin-top: -200px;
+    border-radius: 30% 0 30% 0;
+}
+
+.hero::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: #fbfdff3b;
+    /* filter: invert(1); */
+    width: 100%;
+    height: 120vh;
+}
+.hero {
+    width: 100%;
+    height: 120vh;
+    filter: invert(1);
+    /* filter: blur(1px); */
+
+
+    background: url(./Banners/bg.jpg)  center;
+    /* background-blend-mode: darken; */
+    background-size: cover;
+    color: #000000;
+   padding: 20rem 0 ;
+   
+}
+.hero-left{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0;
+    text-align: justify;
+}
+
+.hero-left h1{   
+    z-index: 2;
+font-weight: bolder;
+margin: 2rem auto;
+    
+}
+.hero-left p{
+    z-index: 2;
+
+font-size: 1.5rem;
+
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    margin: 15rem auto;
+    
+}
