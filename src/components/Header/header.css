@@ -59,7 +59,7 @@ header {
     transition: 0.5s ease-in-out;
     height: 80vh;
     top: 10%;
-    transform: scale(0.7);
+    transform: scale(0.6);
     border-radius: 20px;
     z-index: 10;
 

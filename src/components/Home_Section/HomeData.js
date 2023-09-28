@@ -24,6 +24,9 @@
         banner_container:'banner_container',
         banner:'banner',
         hero:'hero',
+        explore_btn:'explore_btn',
+        downarrow:'downarrow',
+        downarrow_container:'downarrow-container',
 // -------------------------------------------- data ---------------------------------
         scrollbar:'All tests will be LIVE according to the detailed schedule given. Do not confuse to the Total No. of tests in the test cards while buying as they show the number of tests LIVE at the moment..',
         // -----------------------------------banners------------------------------------------------------

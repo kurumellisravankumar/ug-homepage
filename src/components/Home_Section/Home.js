@@ -1,5 +1,6 @@
 import React from "react";
 
+import { AiFillDownCircle } from "react-icons/ai";
 // ----------------------------Typewriter------------------------------------
 import Typewriter from "typewriter-effect";
 // ---------------------- Carousel------------------------------------------
@@ -22,59 +23,138 @@ const Home = () => {
                 <p>{HomeDATA.scrollbar}</p>
               </marquee>
               <div className={HomeDATA.banner_container}>
-                <Carousel 
-                autoPlay
-                infiniteLoop
-                showArrows={false}
-                interval={4600}
-                showThumbs={false} 
-                 >
+                <Carousel
+                  // autoPlay
+                  infiniteLoop
+                  showArrows={false}
+                  interval={4600}
+                  showThumbs={false}
+                >
                   <div className={HomeDATA.hero}>
                     <div className="hero-left">
-               
-                      
-                   <h1><Typewriter
-                      options={{
-                        strings: ["Welcome to",  "eGRADTutor"],
-                        autoStart: true,
-                        loop: true,
-                      }}
-                    /></h1> 
+                      <h1>
+                        <Typewriter
+                          options={{
+                            strings: ["Welcome to eGRADTutor"],
+                            autoStart: true,
+                            loop: true,
+                          }}
+                        />
+                      </h1>
 
-                    <p>
-                      eGRADTutor is an Edtech firm started with a vision to
-                      blend the boundaries in education and take best-in-class
-                      courses and teachers virtually to every corner of the
-                      country. Our courses are developed by the alumni of
-                      IITs/IISc with an intent to enhance the student's
-                      abilities to face some of the toughest exams of the
-                      country. Our offerings not just provide a deeper
-                      understanding of the subjects to the students, but they
-                      also make them exam ready.
-                    </p>
+                      <p>
+                        eGRADTutor is an Edtech firm started with a vision to
+                        blend the boundaries in education and take best-in-class
+                        courses and teachers virtually to every corner of the
+                        country. Our courses are developed by the alumni of
+                        IITs/IISc with an intent to enhance the student's
+                        abilities to face some of the toughest exams of the
+                        country. Our offerings not just provide a deeper
+                        understanding of the subjects to the students, but they
+                        also make them exam ready.
+                      </p>
+                    </div>
+                    <div>
+                      <a href="#" className={HomeDATA.explore_btn}>
+                        EXPLORE NOW
+                      </a>
+                    </div>
+
+                 <div className={HomeDATA.downarrow_container}>
+                      
+                      <a href=""  className={HomeDATA.downarrow}>
+                        
+                        <AiFillDownCircle />
+                      </a>
                     </div>
                   </div>
                   <div className={HomeDATA.banner}>
                     <img src={HomeDATA.b1} alt="" />
+
+                    <a href="#" className={HomeDATA.explore_btn}>
+                      EXPLORE NOW
+                    </a>
+
+                 <div className={HomeDATA.downarrow_container}>
+                   
+                     <a href=""  className={HomeDATA.downarrow}>
+                        
+                        <AiFillDownCircle />
+                      </a>
+                    </div>
                   </div>
                   <div className={HomeDATA.banner}>
                     <img src={HomeDATA.b2} alt="" />
+                    <a href="#" className={HomeDATA.explore_btn}>
+                      EXPLORE NOW
+                    </a>
+
+                 <div className={HomeDATA.downarrow_container}>
+                   
+                     <a href=""  className={HomeDATA.downarrow}>
+                        
+                        <AiFillDownCircle />
+                      </a>
+                    </div>
                   </div>
                   <div className={HomeDATA.banner}>
                     <img src={HomeDATA.b3} alt="" />
+                    <a href="#" className={HomeDATA.explore_btn}>
+                      EXPLORE NOW
+                    </a>
+
+                 <div className={HomeDATA.downarrow_container}>
+
+                   
+                     <a href=""  className={HomeDATA.downarrow}>
+                        
+                        <AiFillDownCircle />
+                      </a>
+                    </div>
                   </div>
                   <div className={HomeDATA.banner}>
                     <img src={HomeDATA.b1} alt="" />
+                    <a href="#" className={HomeDATA.explore_btn}>
+                      EXPLORE NOW
+                    </a>
+
+                 <div className={HomeDATA.downarrow_container}>
+                   
+                     <a href=""  className={HomeDATA.downarrow}>
+                        
+                        <AiFillDownCircle />
+                      </a>
+                    </div>
                   </div>
                   <div className={HomeDATA.banner}>
                     <img src={HomeDATA.b5} alt="" />
+                    <a href="#" className={HomeDATA.explore_btn}>
+                      EXPLORE NOW
+                    </a>
+
+                 <div className={HomeDATA.downarrow_container}>
+                   
+                     <a href=""  className={HomeDATA.downarrow}>
+                        
+                        <AiFillDownCircle />
+                      </a>
+                    </div>
                   </div>
                   <div className={HomeDATA.banner}>
                     <img src={HomeDATA.b6} alt="" />
+                    <a href="#" className={HomeDATA.explore_btn}>
+                      EXPLORE NOW
+                    </a>
+
+                 <div className={HomeDATA.downarrow_container}>
+                   
+                     <a href=""  className={HomeDATA.downarrow}>
+                        
+                        <AiFillDownCircle />
+                      </a>
+                    </div>
                   </div>
 
-                  <div className={HomeDATA.banner}></div>
-                  <div className={HomeDATA.banner}></div>
                 </Carousel>
               </div>
             </div>
