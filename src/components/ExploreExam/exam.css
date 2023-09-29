@@ -2,7 +2,7 @@
     text-align: center;
     width: 100%; 
     background: #279eff21;
-    border-radius: 0 30%   30% 0;
+    /* border-radius: 0 30%   30% 0; */
     padding: 4.56em 0;
 
     /* background: #000; */
@@ -18,14 +18,14 @@
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(300px,600px));
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     gap: 5rem;
 }
 .exam_box_right{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
     padding: 0 2rem;
     gap: 1.8rem;
 }
@@ -48,4 +48,14 @@
     font-size: 0.9rem;
 
 
+}
+
+@media (max-width:600px) {
+    .exam_box_right{
+grid-template-columns: repeat(2,1fr);
+font-size: 1rem;
+    }
+    .exams_buttons{
+    font-size: 0.6rem;
+    }
 }

@@ -1,9 +1,9 @@
-import ots from "./courses_img/oonline ts.png"
-import olvc from "./courses_img/onlinevideolectures.png"
-import qb from "./courses_img/Question-Bank.png"
+import ots from "./courses_img/ots.png"
+import olvc from "./courses_img/olvc2.png"
+import qb from "./courses_img/QB.png"
 
 
-export const Course_data =[
+export const Course_data1 =[
 {
     course_bttons_list1:"course_bttons_list1",
     course_title1:"ONLINE TEST SERIES",
@@ -29,8 +29,12 @@ export const Course_data =[
 
 
 
-},
+}
+]
+export const Course_data2 =[
+
 {
+    Course_box2:"Course_box2",
     course_bttons_list2:"course_bttons_list2",
     course_title2:"ONLINE VIDEO LECTURES",
     course_pont1_2:"Content curated by industry experts",
@@ -38,13 +42,15 @@ export const Course_data =[
     course_pont3_2:"Frequent doubt clearing sessions",
     course_pont4_2:"Accessible from anywhere and anytime ",
     ots_olvc_QB_img2:[olvc],
-    Course_box2:"Course_box2",
     c_btn2_1:"iit-jee(mains & advanced)",
     c_btn2_2:"neet",
     course_img2:'course_img2',
 
 
 },
+]
+
+export const Course_data3 =[
 {
     course_bttons_list3:"course_bttons_list3",
     course_title3:"ONLINE QUESTION BANK",

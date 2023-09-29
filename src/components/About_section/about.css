@@ -1,56 +1,66 @@
-#about{
+#about {
     width: 100%;
     padding: 0.3rem 0;
     /* height: 100vh; */
     background: #279eff21;
-    border-radius:  30% 0  0 30% ;
- 
-    
+    /* border-radius: 90% 50px 0 0%; */
+
+
 }
 
-.about_container{
+.about_container {
     width: 80%;
-    margin: 6rem auto;   
+    margin: 6rem auto;
     text-align: center;
 
 }
-.about_img_container{  
+
+.about_img_container {
     width: 350px;
 }
-.about_container h2{
+
+.about_container h2 {
     font-size: 2rem;
     margin: 2rem auto;
-    
+
 }
-.about_left{
+
+.about_left {
     display: grid;
     /* grid-template-columns: 30% 65%; */
     align-items: center;
     justify-content: center;
 }
-.about_left p{
+
+.about_left p {
+    margin: 0 auto;
+    width: 80%;
     text-align: justify;
     font-size: 1.2rem;
 }
-.mVimg{
+
+.mVimg {
     width: 200px;
 }
-.mVimg img{
-    width: 100%;
-}
-.about_img_container img{
+
+.mVimg img {
     width: 100%;
 }
 
-.about_right{
+.about_img_container img {
+    width: 100%;
+}
+
+.about_right {
     width: 80%;
-  
+
     margin: 5rem auto;
-  
+
 }
-.about_vision_subbox{
+
+.about_vision_subbox {
     display: grid;
-    grid-template-columns: 30% 65%;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
     align-items: center;
     justify-content: center;
     gap: 3rem;
@@ -59,16 +69,34 @@
     line-height: 180%;
 }
 
-.about_vision_box h3,.about_mission_box h3{
-    margin: 1rem auto 
+.about_vision_box h3,
+.about_mission_box h3 {
+    margin: 1rem auto
 }
-.about_mision_subbox{
+
+.about_mision_subbox {
     display: grid;
-    grid-template-columns: 65% 30%;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
     align-items: center;
     justify-content: center;
     gap: 3rem;
     font-size: 1rem;
     text-align: left;
     line-height: 180%;
+}
+
+@media (max-width:600px) {
+    .about_left p {
+
+        font-size: 0.7rem;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .exams_buttons {
+        font-size: 0.6rem;
+    }
+    .about_vision_subbox ,.about_mision_subbox{
+        font-size: 0.7rem;
+    }
 }

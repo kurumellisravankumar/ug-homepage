@@ -55,15 +55,15 @@ const Home = () => {
                       </p>
                     </div>
                     <div>
-                      <a href="#" className={HomeDATA.explore_btn}>
+                      <a href="#courses" className={HomeDATA.explore_btn}>
                         EXPLORE NOW
                       </a>
                     </div>
 
                  <div className={HomeDATA.downarrow_container}>
-                      
-                      <a href=""  className={HomeDATA.downarrow}>
-                        
+                     
+                      <a href="#about"  className={HomeDATA.downarrow}>
+                      scroll down                        
                         <AiFillDownCircle />
                       </a>
                     </div>
@@ -105,9 +105,9 @@ const Home = () => {
 
                  <div className={HomeDATA.downarrow_container}>
 
-                   
+                 <span>scrolldown</span>
                      <a href=""  className={HomeDATA.downarrow}>
-                        
+                     
                         <AiFillDownCircle />
                       </a>
                     </div>
